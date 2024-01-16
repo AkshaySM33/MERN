@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            text-align: center;
+            
+        }
+        input, label, button, select{
+            margin-bottom: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #imgdiv{
+            background-image: url(animalcog_goat.jpg);
+            background-position: center;
+            background-size: 200px;
+            background-repeat: inherit;
+            width:200px;
+            color: beige;
+            height: 200px;
+            font-family: 'Times New Roman', Times, serif;
+            
+
+        }
+        #diffclr{
+            color: red;
+            
+        }
+    </style>
+</head>
+<body>
+    <Section>
+        <div id="imgdiv">
+    <span><b>This is <u> <span id="diffclr"><i>Normal</i></span></u> text</b></span>
+    <!--  -->
+    
+
+    </div>
+    </Section>
+    <br>
+    <table border="1">
+        <tr>
+            <td>ajhfj</td>
+            <td>hjads</td>
+            <td>fhjdg</td>
+        </tr><tr>
+            <td>hjkdfhg</td>
+            <td>jjhgj</td>
+            <td>hkg</td>
+        </tr><tr>
+            <td>hkdfjshg</td>
+            <td>hjkg</td>
+            <td>hjkdfhg</td>
+        </tr>
+    </table>
+    <header><h1>Please Login</h1></header>
+    <section>
+        <form action="/form" method="post">
+            <label for="UName">User Name</label>
+            <input id="UName" type="text" name="user_name" placeholder="User Name" required>
+            <br>
+            <label for="password">Password</label>
+            <input id="password" type="password" name="Pass" placeholder="Password" required>
+            <br>
+            <label for="LoginType">Login Type</label>
+            <select name="LoginType" id="LoginType">
+                <option value="Admin">Admin</option>
+                <option value="User" selected>User</option>
+                <option value="Manager">Manager</option>
+            </select>
+            <br>
+            <input id="Gender" name="Gender" type="radio">Male
+            <input id="Gender" type="radio" name="Gender">Female
+            <br>
+            <button id="btnsubmit" name="Submit">Submit</button>
+            </form>
+    </section>
+</body>
+</html>
