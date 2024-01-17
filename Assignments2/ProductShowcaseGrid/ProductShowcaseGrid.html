@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 20px;
+            margin: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .productGrid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap:20px;
+        }
+        .productCard{
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0 0 0 0.1);
+            border-radius: 8px;
+            transition: transform 0.3 ease-in-out;            
+        }
+        .productCard :hover{
+            transform: scale(1.05);
+        }
+        .productImage{
+            width: 100%;
+            height: 300px;
+        }
+        .productDetails{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .productTitle{
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .productDescription{
+            flex-grow: 1;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .productPrice{
+            color: #4caf50;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="productGrid">
+        <div class="productCard">
+            <img class="productImage" src="Product1.png" alt="Product 1">
+            <div class="productDetails">
+                <div class="productTitle">Men Formal</div> 
+                <div class="productDescription">Men Slim Fit Solid Spread Collar Formal Shirt</div>
+                <div class="productPrice">Rs2999</div> 
+            </div>
+        </div>
+        <div class="productCard">
+            <img class="productImage" src="Product2.png" alt="Product 2">
+            <div class="productDetails">
+                <div class="productTitle">Shoes</div> 
+                <div class="productDescription">Men's breathable mesh shoes</div>
+                <div class="productPrice">Rs1999</div> 
+            </div>
+        </div>
+        <div class="productCard">
+            <img class="productImage" src="Product3.png" alt="Product 3">
+            <div class="productDetails">
+                <div class="productTitle">Sweat Shirt</div> 
+                <div class="productDescription">Mens Stretch fit sweat shirt</div>
+                <div class="productPrice">Rs1999</div> 
+            </div>
+        </div>
+        <div class="productCard">
+            <img class="productImage" src="Product4.png" alt="Product 4">
+            <div class="productDetails">
+                <div class="productTitle">Shirt</div> 
+                <div class="productDescription">Double colored shaded T shirts for Women</div>
+                <div class="productPrice">Rs999</div> 
+            </div>
+        </div>
+        <div class="productCard">
+            <img class="productImage" src="Product5.png" alt="Product 5">
+            <div class="productDetails">
+                <div class="productTitle">Shirt</div> 
+                <div class="productDescription">Merlin Madison Ladies Motorcycle Shirt</div>
+                <div class="productPrice">Rs699</div> 
+            </div>
+        </div>
+    </div>
+</body>
+</html>

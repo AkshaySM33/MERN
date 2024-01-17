@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 20px;
+            margin: 0px;
+            background-color: #f4f4f4;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .cardGrid{
+            display: grid;
+            grid-template-columns: repeat(autofill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card{
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0 0 0 0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .card :hover{
+            transform: scale(1.02);
+        }
+        .cardcontent{
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+        .cardTitle{
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .cardDescription{
+            flex-grow: 1;
+            margin-bottom: 10px;
+        }
+        .cardActions{
+            display: flex;
+            justify-content: space-between;
+        }
+        .cardActions button{
+            background-color: #4caf50;
+            color: #fff;
+            padding: 8px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .cardActions button:hover{
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="cardGrid">
+        <div class="card">
+            <div class="cardcontent">
+                <div class="cardTitle">Lorem</div>
+                <div class="cardDescription">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem dolores architecto magnam voluptatem omnis repellat illo minus, at explicabo aperiam in consequuntur, nulla numquam vel harum similique ipsum. Cumque, corrupti!
+                Voluptatibus, expedita cum consectetur error quisquam officiis ullam laboriosam distinctio qui quibusdam, ipsam molestias quidem mollitia. Odio eum porro aperiam. Dolorem incidunt libero natus voluptatibus adipisci corporis laboriosam, aliquam eaque.</div>
+                <div class="cardActions">
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardcontent">
+                <div class="cardTitle">Lorem Text</div>
+                <div class="cardDescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo iusto fugit minus provident consequuntur dignissimos eligendi eveniet molestiae vel incidunt quisquam aliquid, velit mollitia optio dolores quis, odio ab nisi?</div>
+                <div class="cardActions">
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardcontent">
+                <div class="cardTitle">This is lorem example</div>
+                <div class="cardDescription">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In minima dolores odio beatae temporibus. Quaerat sapiente ut iure consectetur magnam vero at aspernatur fugit! Voluptatem quos dolores officiis debitis quasi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint laborum molestias quidem exercitationem assumenda error autem quisquam placeat aliquid blanditiis. Rem mollitia quas at tempora quasi, culpa aliquid laudantium voluptatibus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque praesentium dolor, libero quidem dignissimos harum eius minima vitae iure voluptatibus aut quae magni doloremque sint! Corrupti minus natus cum qui.</div>
+                <div class="cardActions">
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
